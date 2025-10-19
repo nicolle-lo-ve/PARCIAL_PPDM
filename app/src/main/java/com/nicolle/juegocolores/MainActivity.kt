@@ -21,21 +21,5 @@ class MainActivity : AppCompatActivity() {
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
-        // Configura la ActionBar para trabajar con Navigation Component
-        // Esto permite mostrar el botón de "atrás" automáticamente
-        setupActionBarWithNavController(navController)
-    }
-
-    /**
-     * Maneja el evento de presionar el botón "atrás"
-     * Delega la navegación al NavController
-     */
-    override fun onSupportNavigateUp(): Boolean {
-        val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
-
-        // Si no puede navegar hacia atrás, termina la actividad
-        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
