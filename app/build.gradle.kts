@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.juegocolores"
+    namespace = "com.nicolle.juegocolores"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.juegocolores"
+        applicationId = "com.nicolle.juegocolores"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
