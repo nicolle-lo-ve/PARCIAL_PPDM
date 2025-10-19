@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <!-- Fragment de Bienvenida -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.nicolle.juegocolores.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <!-- Fragment del Juego -->
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.nicolle.juegocolores.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game">
+
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="puntajeFinal"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <!-- Fragment de Resultados -->
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.nicolle.juegocolores.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result">
+
+        <action
+            android:id="@+id/action_resultFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+
+        <action
+            android:id="@+id/action_resultFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="puntajeFinal"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
