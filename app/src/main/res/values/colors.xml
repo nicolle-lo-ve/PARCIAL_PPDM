@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colores principales del tema -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores del juego -->
+    <color name="color_rojo">#F44336</color>
+    <color name="color_verde">#4CAF50</color>
+    <color name="color_azul">#2196F3</color>
+    <color name="color_amarillo">#FFEB3B</color>
+
+    <!-- Colores de UI -->
+    <color name="fondo_principal">#1A1A2E</color>
+    <color name="fondo_secundario">#16213E</color>
+    <color name="texto_principal">#FFFFFF</color>
+    <color name="texto_secundario">#B0B0B0</color>
+    <color name="acento">#0F3460</color>
+    <color name="exito">#4CAF50</color>
+    <color name="error">#F44336</color>
+
+    <!-- Colores de botones -->
+    <color name="boton_primario">#E94560</color>
+    <color name="boton_primario_pressed">#C73652</color>
+    <color name="boton_secundario">#533483</color>
+
+    <!-- Colores adicionales -->
+    <color name="gris_claro">#EEEEEE</color>
+    <color name="gris_oscuro">#424242</color>
 </resources>

@@ -1,3 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">JuegoColores</string>
+    <string name="app_name">Juego de Colores</string>
+
+    <!-- WelcomeFragment -->
+    <string name="titulo_bienvenida">Juego de Colores</string>
+    <string name="mensaje_bienvenida">¡Bienvenido al desafío de colores más emocionante!</string>
+    <string name="boton_iniciar">Iniciar Juego</string>
+    <string name="boton_ver_reglas">Ver Reglas</string>
+
+    <!-- Reglas del juego -->
+    <string name="titulo_reglas">Reglas del Juego</string>
+    <string name="reglas_contenido">CÓMO JUGAR:\n\n
+        1️. Se mostrará un color en la pantalla\n\n
+        2️. Presiona el botón que coincida con ese color\n\n
+        3️. Cada acierto suma 1 punto\n\n
+        4️. Tienes 30 segundos para obtener el mayor puntaje posible\n\n
+        5️. ¡Sé rápido y preciso!\n\n
+        El tiempo corre... ¿Estás listo?</string>
+    <string name="boton_entendido">¡Entendido!</string>
+
+    <!-- GameFragment -->
+    <string name="titulo_juego">Adivina el Color</string>
+    <string name="texto_color_actual">Color Actual:</string>
+    <string name="texto_puntaje">Puntaje: %1$d</string>
+    <string name="texto_tiempo">Tiempo: %1$ds</string>
+    <string name="color_rojo">ROJO</string>
+    <string name="color_verde">VERDE</string>
+    <string name="color_azul">AZUL</string>
+    <string name="color_amarillo">AMARILLO</string>
+
+    <!-- ResultFragment -->
+    <string name="titulo_resultado">¡Juego Terminado!</string>
+    <string name="texto_puntaje_final">Tu Puntaje: %1$d puntos</string>
+    <string name="texto_record">Récord Histórico: %1$d puntos</string>
+    <string name="texto_nuevo_record">¡NUEVO RÉCORD!</string>
+    <string name="titulo_historial">Historial de la Sesión</string>
+    <string name="boton_jugar_nuevamente">Jugar Otra Vez</string>
+    <string name="boton_menu_principal">Menú Principal</string>
+    <string name="sin_historial">No hay partidas en el historial</string>
+
+    <!-- Mensajes generales -->
+    <string name="correcto">¡Correcto! ✓</string>
+    <string name="incorrecto">¡Incorrecto! ✗</string>
 </resources>
